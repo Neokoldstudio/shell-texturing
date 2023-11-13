@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dankufs7orahd"]
+
+[ext_resource type="Shader" path="res://Shell.gdshader" id="1_jc5tu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ldqhv"]
+render_priority = 0
+shader = ExtResource("1_jc5tu")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xn4lh"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_ldqhv")
+mesh = SubResource("PlaneMesh_xn4lh")

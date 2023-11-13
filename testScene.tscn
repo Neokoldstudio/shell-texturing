@@ -15,6 +15,7 @@ shader = ExtResource("1_jc5tu")
 script = ExtResource("1_qu3q2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
 material_override = SubResource("ShaderMaterial_ldqhv")
 mesh = SubResource("PlaneMesh_xn4lh")
 skeleton = NodePath("../..")

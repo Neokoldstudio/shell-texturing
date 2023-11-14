@@ -6,13 +6,13 @@
 render_priority = 0
 shader = ExtResource("1_uiu8l")
 shader_parameter/_Dentsity = 100.0
-shader_parameter/_ShellIndex = 0.0
+shader_parameter/_ShellIndex = 3.0
 shader_parameter/_ShellCount = 16.0
-shader_parameter/_ShellLength = 1.0
-shader_parameter/_ShellDistanceAttenuation = 1.0
+shader_parameter/_ShellLength = 0.5
+shader_parameter/_ShellDistanceAttenuation = 10.0
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_fp0ys"]
+[sub_resource type="SphereMesh" id="SphereMesh_r7kxf"]
 
 [node name="Shells" type="MeshInstance3D"]
 material_override = SubResource("ShaderMaterial_4p46m")
-mesh = SubResource("PlaneMesh_fp0ys")
+mesh = SubResource("SphereMesh_r7kxf")

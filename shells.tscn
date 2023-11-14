@@ -5,6 +5,11 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4p46m"]
 render_priority = 0
 shader = ExtResource("1_uiu8l")
+shader_parameter/_Dentsity = 100.0
+shader_parameter/_ShellIndex = 0.0
+shader_parameter/_ShellCount = 16.0
+shader_parameter/_ShellLength = 1.0
+shader_parameter/_ShellDistanceAttenuation = 1.0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_fp0ys"]
 

@@ -1,9 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbae8ksftdgys"]
+[gd_scene load_steps=2 format=3 uid="uid://bbae8ksftdgys"]
 
 [ext_resource type="Script" path="res://instanciateShell.gd" id="1_d4m3t"]
-[ext_resource type="PackedScene" uid="uid://clnxjo6f05483" path="res://shells.tscn" id="2_flfu2"]
 
 [node name="Fur" type="Node3D"]
 script = ExtResource("1_d4m3t")
-
-[node name="Shells" parent="." instance=ExtResource("2_flfu2")]

@@ -9,4 +9,4 @@ transform = Transform3D(1, 0, 0, 0, 0.835232, 0.549898, 0, -0.549898, 0.835232, 
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
 
-[node name="Fur" parent="." instance=ExtResource("1_85vld")]
+[node name="fur" parent="." instance=ExtResource("1_85vld")]

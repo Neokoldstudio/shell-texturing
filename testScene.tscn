@@ -1,21 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://b5685eofm23gd"]
+[gd_scene load_steps=2 format=3 uid="uid://b5685eofm23gd"]
 
-[ext_resource type="Shader" path="res://Shell.gdshader" id="1_jc5tu"]
-[ext_resource type="Script" path="res://instanciateShell.gd" id="1_qu3q2"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ldqhv"]
-render_priority = 0
-shader = ExtResource("1_jc5tu")
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_xn4lh"]
+[ext_resource type="PackedScene" uid="uid://bbae8ksftdgys" path="res://fur.tscn" id="1_85vld"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Node3D" type="Node3D" parent="."]
-script = ExtResource("1_qu3q2")
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.835232, 0.549898, 0, -0.549898, 0.835232, -0.10831, 1.52235, 2.11608)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
-material_override = SubResource("ShaderMaterial_ldqhv")
-mesh = SubResource("PlaneMesh_xn4lh")
-skeleton = NodePath("../..")
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+
+[node name="Fur" parent="." instance=ExtResource("1_85vld")]

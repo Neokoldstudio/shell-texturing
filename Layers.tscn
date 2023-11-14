@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://243d2a3hrarc"]
+
+[ext_resource type="Shader" path="res://Shell.gdshader" id="1_fba08"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b2kv3"]
+render_priority = 0
+shader = ExtResource("1_fba08")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_uvdnu"]
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0317896, 0.0619588, -0.0795001)
+material_override = SubResource("ShaderMaterial_b2kv3")
+mesh = SubResource("PlaneMesh_uvdnu")

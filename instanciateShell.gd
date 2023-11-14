@@ -1,11 +1,17 @@
 extends Node
 
+var _ShellCount = 16;
+var _Layers = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	var scene = preload("res://shells.tscn")
 
+	for i in range(_ShellCount):
+		var instance = scene.instantiate();
+		add_child(instance);
+		print("shell created");
+		
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+	for i in _Layers:
+		pass

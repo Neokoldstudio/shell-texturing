@@ -15,12 +15,11 @@ void fragment() {
 	
 	float rng = rand(new_UV);
 	
-	if(rng>0.1){
+	if(rng>0.0){
 		ALBEDO = vec3(0.0,1.0,0.0);
 	}
 	else{
 		ALBEDO = vec3(0.0,0.0,0.0);
 	}
 		
-	// Place fragment code here.
 }

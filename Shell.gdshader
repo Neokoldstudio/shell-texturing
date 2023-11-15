@@ -30,7 +30,8 @@ void fragment() {
 		ALBEDO = vec3(0.0,1.0,0.0);
 	}
 	else{
-		ALBEDO = vec3(0.0,0.0,0.0);
+		discard;
+		//ALBEDO = vec3(0.0,0.0,0.0);
 	}
 		
 }

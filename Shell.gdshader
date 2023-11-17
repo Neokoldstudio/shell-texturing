@@ -15,7 +15,7 @@ void vertex(){
 	float shellHeight = _ShellIndex / _ShellCount;
 	// Place vertex code here.
 	shellHeight = pow(_ShellDistanceAttenuation, shellHeight);
-	VERTEX.xyz = NORMAL.xyz * _ShellLength * shellHeight;
+	VERTEX.xyz += NORMAL.xyz * _ShellIndex * _ShellLength * shellHeight;
 	NORMAL = normalize((VIEW_MATRIX * vec4(VERTEX,0.0)).xyz);
 }
 

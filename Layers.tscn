@@ -9,11 +9,11 @@ shader_parameter/_Dentsity = 100.0
 shader_parameter/_ShellIndex = 0.0
 shader_parameter/_ShellCount = 16.0
 shader_parameter/_ShellLength = 1.0
-shader_parameter/_ShellDistanceAttenuation = null
+shader_parameter/_ShellDistanceAttenuation = 2.0
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_uvdnu"]
+[sub_resource type="SphereMesh" id="SphereMesh_fa1fm"]
 
 [node name="MeshInstance3D" type="MeshInstance3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0317896, 0.0619588, -0.0795001)
 material_override = SubResource("ShaderMaterial_b2kv3")
-mesh = SubResource("PlaneMesh_uvdnu")
+mesh = SubResource("SphereMesh_fa1fm")

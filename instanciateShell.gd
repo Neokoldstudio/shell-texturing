@@ -1,9 +1,9 @@
 @tool
 extends Node
 
-var _ShellCount = 16;
+var _ShellCount = 32;
 var _ShellLength = 1
-var density = 100.0
+var density = 1000.0
 var scene = preload("res://shells.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():

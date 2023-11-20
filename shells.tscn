@@ -2,7 +2,7 @@
 
 [ext_resource type="Shader" path="res://Shell.gdshader" id="1_uiu8l"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_qh73w"]
+[sub_resource type="SphereMesh" id="SphereMesh_lekyx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xtcc6"]
 render_priority = 0
@@ -14,5 +14,5 @@ shader_parameter/_ShellLength = 0.01
 shader_parameter/_ShellDistanceAttenuation = 2.0
 
 [node name="Shells" type="MeshInstance3D"]
-mesh = SubResource("SphereMesh_qh73w")
+mesh = SubResource("SphereMesh_lekyx")
 surface_material_override/0 = SubResource("ShaderMaterial_xtcc6")

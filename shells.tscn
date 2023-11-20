@@ -2,17 +2,17 @@
 
 [ext_resource type="Shader" path="res://Shell.gdshader" id="1_uiu8l"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_lekyx"]
+[sub_resource type="TorusMesh" id="TorusMesh_m85dr"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xtcc6"]
 render_priority = 0
 shader = ExtResource("1_uiu8l")
 shader_parameter/_Dentsity = 100.0
-shader_parameter/_ShellIndex = 0.0
+shader_parameter/_ShellIndex = 15.0
 shader_parameter/_ShellCount = 16.0
-shader_parameter/_ShellLength = 0.01
+shader_parameter/_ShellLength = 0.1
 shader_parameter/_ShellDistanceAttenuation = 2.0
 
 [node name="Shells" type="MeshInstance3D"]
-mesh = SubResource("SphereMesh_lekyx")
+mesh = SubResource("TorusMesh_m85dr")
 surface_material_override/0 = SubResource("ShaderMaterial_xtcc6")

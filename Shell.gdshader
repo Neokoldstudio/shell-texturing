@@ -14,8 +14,8 @@ float rand(vec2 uv){
 void vertex(){
 	float shellHeight = _ShellIndex / _ShellCount;
 	// Place vertex code here.
-	shellHeight = pow(_ShellDistanceAttenuation, shellHeight);
-	VERTEX.xyz += NORMAL.xyz * _ShellLength * shellHeight;
+	//shellHeight = pow(_ShellDistanceAttenuation, shellHeight);
+	VERTEX.xyz += NORMAL.xyz * shellHeight * _ShellLength;
 	NORMAL = normalize((VIEW_MATRIX * vec4(VERTEX,0.0)).xyz);
 }
 
@@ -27,7 +27,7 @@ void fragment() {
 	float h = _ShellIndex / _ShellCount;
 	
 	if(rng>h){
-		ALBEDO = vec3(0.0,1.0,0.0);
+		ALBEDO = vec3(0.0,0.0,1.0);
 	}
 	else{
 		discard;

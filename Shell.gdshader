@@ -6,6 +6,7 @@ uniform float _ShellIndex = 0;
 uniform float _ShellCount = 16;
 uniform float _ShellLength = 0.01;
 uniform float _ShellDistanceAttenuation = 2;
+uniform float _Thickness = 1;
 
 float rand(vec2 uv){
     return fract(sin(dot(uv, vec2(12.9898, 78.233))) * 43758.5453);
@@ -20,13 +21,14 @@ void vertex(){
 
 void fragment() {
 	
-	vec2 new_UV = floor(UV*_Dentsity);
-	vec2 DistFromCenter = 2.0*new_UV-1.0;
-	float rng = rand(new_UV);
+	vec2 new_UV = UV*_Dentsity;
+	vec2 LocalUV = 2.0*fract(new_UV)-1.0;
+	float dst = length(LocalUV);
+	float rng = rand(floor(new_UV));
 	float h = _ShellIndex / _ShellCount;
 	
-	if(rng>h || h == 0.0){
-		ALBEDO = vec3(0.0,1.0,0.0)*h;
+	if(dst>_Thickness*(rng-h) && h != 0.0){
+		discard;
 	}
-	else {discard;}
+	else{ALBEDO = vec3(1.0,0.0,1.0)*h;}
 }

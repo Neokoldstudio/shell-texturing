@@ -9,6 +9,7 @@ transform = Transform3D(1, 0, 0, 0, 0.835232, 0.549898, 0, -0.549898, 0.835232, 
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D"]
 transform = Transform3D(0.989111, 0, -0.147171, 0.0419268, 0.958562, 0.281783, 0.141072, -0.284885, 0.948124, -0.0359309, -0.0364811, -0.0667784)
+visible = false
 light_color = Color(1, 0.988235, 0.454902, 1)
 metadata/_edit_group_ = true
 

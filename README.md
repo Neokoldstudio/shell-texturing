@@ -1,4 +1,4 @@
-# GrassTex: Shell Texturing Algorithm for Fake Grass
+# Shell Texturing Algorithm to Fake Grass
 
 This is a shell texturing algorithm designed for creating realistic grass for 3D environments in Godot. This shader implementation provides an efficient way to simulate the appearance of grass using parameters like density, shell index, shell count, and more.
 
@@ -37,5 +37,5 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-Special thanks to Garrett Gunnell form the Youtube channel Acerola who granted a really good explanation of the logic behind this algorithm.
+Special thanks to Garrett Gunnell form the Youtube channel [Acerola](https://www.youtube.com/@Acerola_t "Acerola's Channel") who granted a really good explanation of the logic behind this algorithm.
 His video was my primary ressource throughout the implementation process.

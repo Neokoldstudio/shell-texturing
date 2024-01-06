@@ -1,7 +1,7 @@
 @tool
 extends Node
 
-var _ShellCount = 32;
+var _ShellCount = 256;
 var _ShellLength = 1
 var density = 1000.0
 var scene = preload("res://shells.tscn")

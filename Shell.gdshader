@@ -5,7 +5,7 @@ uniform float _Dentsity = 100.0;
 uniform float _ShellIndex = 0;
 uniform float _ShellCount = 16;
 uniform float _ShellLength = 0.01;
-uniform float _ShellDistanceAttenuation = 2;
+uniform float _ShellDistanceAttenuation = 0.4;
 uniform float _Thickness = 1;
 
 float rand(vec2 uv){
@@ -15,6 +15,7 @@ float rand(vec2 uv){
 void vertex(){
 	float shellHeight = _ShellIndex / _ShellCount;
 	// Place vertex code here.
+	shellHeight = pow(shellHeight, _ShellDistanceAttenuation);
 	VERTEX.xyz += NORMAL.xyz * shellHeight * _ShellLength;
 	NORMAL = normalize((VIEW_MATRIX * vec4(VERTEX,0.0)).xyz);
 }

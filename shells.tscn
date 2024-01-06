@@ -2,18 +2,18 @@
 
 [ext_resource type="Shader" path="res://Shell.gdshader" id="1_uiu8l"]
 
-[sub_resource type="TorusMesh" id="TorusMesh_tbd3u"]
+[sub_resource type="PlaneMesh" id="PlaneMesh_3k5io"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xtcc6"]
 render_priority = 0
 shader = ExtResource("1_uiu8l")
-shader_parameter/_Dentsity = 500.0
+shader_parameter/_Dentsity = 100.0
 shader_parameter/_ShellIndex = 0.0
 shader_parameter/_ShellCount = 256.0
 shader_parameter/_ShellLength = 0.1
-shader_parameter/_ShellDistanceAttenuation = 1.0
+shader_parameter/_ShellDistanceAttenuation = 0.4
 shader_parameter/_Thickness = 2.0
 
 [node name="Shells" type="MeshInstance3D"]
-mesh = SubResource("TorusMesh_tbd3u")
+mesh = SubResource("PlaneMesh_3k5io")
 surface_material_override/0 = SubResource("ShaderMaterial_xtcc6")

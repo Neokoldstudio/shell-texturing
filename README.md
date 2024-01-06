@@ -14,7 +14,7 @@ This is a shell texturing algorithm designed for creating realistic grass for 3D
 ```bash
 git clone https://github.com/Neokoldstudio/shell-texturing.git
 ```
-2. Include the shader `Shell.gdshader` and `instanciateShell.gd` files in your project.
+2. Include the shader [`Shell.gdshader`](./Shell.gdshader) and [`instanciateShell.gd`](./instanciateShell.gd) files in your godot project.
 3. Adjust the parameters to achieve the desired grass appearance.
 4. Run the shader to render the fake grass in your 3D scene.
 

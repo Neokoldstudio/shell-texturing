@@ -9,7 +9,6 @@ var scene = preload("res://shells.tscn")
 func _ready():
 	for i in range(_ShellCount):
 		createShell(i);
-		await get_tree().create_timer(0.05).timeout
 		
 		
 func createShell(index:int):

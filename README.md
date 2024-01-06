@@ -18,28 +18,24 @@ git clone https://github.com/Neokoldstudio/shell-texturing.git
 3. Adjust the parameters to achieve the desired grass appearance.
 4. Run the shader to render the fake grass in your 3D scene.
 
-##Parameters
+## Parameters
 
 - **`_Density`:** Controls the overall density of the grass.
--**`_ShellIndex`:** Specifies the current index of the grass shell.
--**`_ShellCount`:** Sets the total number of grass shells.
--**`_ShellLength`:** Defines the length of each grass shell.
--**`_ShellDistanceAttenuation`:** Adjusts the attenuation of shell height based on distance.
--**`_Thickness`:** Specifies the thickness of the grass.
+- **`_ShellIndex`:** Specifies the current index of the grass shell.
+- **`_ShellCount`:** Sets the total number of grass shells.
+- **`_ShellLength`:** Defines the length of each grass shell.
+- **`_ShellDistanceAttenuation`:** Adjusts the attenuation of shell height based on distance.
+- **`_Thickness`:** Specifies the thickness of the grass.
 
-##Examples
+## Examples
 
 Screenshot to come
 
-##License
+## License
 
 This project is licensed under the MIT License.
 
-##Acknowledgments
+## Acknowledgments
 
 Special thanks to Garrett Gunnell form the Youtube channel Acerola who granted a really good explanation of the logic behind this algorithm.
 His video was my primary ressource throughout the implementation process.
-
-
-
-[Any acknowledgments or credits you want to mention]

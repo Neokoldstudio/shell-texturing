@@ -20,6 +20,7 @@ git clone https://github.com/Neokoldstudio/shell-texturing.git
 
 ## Parameters
 
+- **`color`:** Color picker; control the color of the grass.
 - **`_Density`:** Controls the overall density of the grass.
 - **`_ShellIndex`:** Specifies the current index of the grass shell.
 - **`_ShellCount`:** Sets the total number of grass shells.
@@ -37,5 +38,5 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-Special thanks to Garrett Gunnell form the Youtube channel [Acerola](https://www.youtube.com/@Acerola_t "Acerola's Channel") who granted a really good explanation of the logic behind this algorithm.
+Special thanks to Garrett Gunnell form the Youtube channel [Acerola](https://www.youtube.com/@Acerola_t "Acerola's Channel") who granted a solid explanation of the logic behind this algorithm.
 His video was my primary ressource throughout the implementation process.

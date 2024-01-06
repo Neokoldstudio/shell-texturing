@@ -2,6 +2,7 @@ shader_type spatial;
 render_mode cull_disabled;
 
 // GrassTex Parameters
+uniform vec4 color : source_color;
 uniform float _Density = 100.0;
 uniform float _ShellIndex = 0;
 uniform float _ShellCount = 16;
@@ -47,6 +48,6 @@ void fragment() {
         discard;
     } else {
         // Set the albedo color based on the shell height
-        ALBEDO = vec3(1.0, 0.0, 1.0) * h;
+        ALBEDO = vec3(color[0],color[1],color[2]) * h;
     }
 }

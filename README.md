@@ -30,7 +30,7 @@ git clone https://github.com/Neokoldstudio/shell-texturing.git
 
 ## Examples
 
-Screenshot to come
+![Alt text](exemple.png?raw=true "Exemple showcasing the use of this shader of a sphere mesh")
 
 ## License
 

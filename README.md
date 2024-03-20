@@ -1,4 +1,4 @@
-# Shell Texturing Algorithm to Fake Fur Or Grass
+# Shell Texturing Algorithm For Fake Fur Or Grass
 
 This is a shell texturing algorithm designed for creating somewhat realistic fur textures for 3D environments in Godot. This shader implementation provides an efficient way to simulate the appearance of fur using parameters like density, shell index, shell count, and more.
 

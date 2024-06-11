@@ -1,16 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://b5685eofm23gd"]
+[gd_scene load_steps=3 format=3 uid="uid://b5685eofm23gd"]
 
 [ext_resource type="PackedScene" uid="uid://bbae8ksftdgys" path="res://fur.tscn" id="1_85vld"]
 
+[sub_resource type="Environment" id="Environment_s8l08"]
+ambient_light_source = 1
+ambient_light_color = Color(0.739176, 0.751641, 0.847561, 1)
+reflected_light_source = 1
+
 [node name="Node3D" type="Node3D"]
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.835232, 0.549898, 0, -0.549898, 0.835232, 0.00401449, 1.35306, 1.65957)
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_s8l08")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D"]
-transform = Transform3D(0.989111, 0, -0.147171, 0.0419268, 0.958562, 0.281783, 0.141072, -0.284885, 0.948124, -0.0359309, -0.0364811, -0.0667784)
-visible = false
-light_color = Color(1, 0.988235, 0.454902, 1)
-metadata/_edit_group_ = true
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.976239, 0.216695, 0, -0.216695, 0.976239, 0.00401449, 1.10875, 1.41759)
+projection = 1
+fov = 96.8777
+size = 2.24931
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.734492, -0.479785, 0.479925, 0.408304, -0.877321, -0.252182, 0.542041, 0.0107297, 0.840284, -0.0163931, 0.602456, -1.01844)
+light_color = Color(0.47788, 0.47788, 0.47788, 1)
+light_energy = 1.25
 
 [node name="fur" parent="." instance=ExtResource("1_85vld")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0163931, 0.602456, -1.01844)

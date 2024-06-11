@@ -1,20 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://clnxjo6f05483"]
+[gd_scene load_steps=5 format=3 uid="uid://clnxjo6f05483"]
 
 [ext_resource type="Shader" path="res://Shell.gdshader" id="1_uiu8l"]
+[ext_resource type="Texture2D" uid="uid://cishl75n2yjat" path="res://icon.svg" id="2_2qhcg"]
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_3k5io"]
+[sub_resource type="TorusMesh" id="TorusMesh_e81yy"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xtcc6"]
 render_priority = 0
 shader = ExtResource("1_uiu8l")
-shader_parameter/color = Color(0.627451, 0.572549, 0.196078, 1)
-shader_parameter/_Density = 100.0
+shader_parameter/MODE = 1
+shader_parameter/AmbiantOcclusion = false
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/_Density = 500.0
 shader_parameter/_ShellIndex = 0.0
 shader_parameter/_ShellCount = 256.0
 shader_parameter/_ShellLength = 0.1
 shader_parameter/_ShellDistanceAttenuation = 0.4
-shader_parameter/_Thickness = 2.0
+shader_parameter/_Thickness = 1.0
+shader_parameter/_Attenuation = 1.0
+shader_parameter/_OcclusionBias = 0.0
+shader_parameter/_Shininess = 45.0
+shader_parameter/texture_albedo = ExtResource("2_2qhcg")
 
 [node name="Shells" type="MeshInstance3D"]
-mesh = SubResource("PlaneMesh_3k5io")
+mesh = SubResource("TorusMesh_e81yy")
 surface_material_override/0 = SubResource("ShaderMaterial_xtcc6")
